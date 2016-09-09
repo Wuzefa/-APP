@@ -1,0 +1,122 @@
+
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:url(../img/gg.jpg) ;
+	background-size:cover ;
+}
+.app{
+	width: 323px;
+	height: 580px;
+	position: absolute;
+	top: 20px;
+	left: 100px;
+}
+.app .a_top{
+	height: 47px;
+	width: 300px;
+}
+.app .a_show{
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+.app .a_time{
+	height: 20px;
+}
+.app .a_title{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: #fff;
+	background: #000;
+	text-align: center;
+	height: 35px;
+	line-height: 25px;
+}
+
+.app .a_text{
+	background: white;
+	height: 500px;
+	overflow: auto ;
+	/*display: none;*/
+}
+
+.app .a_study{
+	height: 440px;
+	background: white;
+	text-align: center;
+	display: none;
+}
+
+.app .a_suc{
+	height: 440px;
+	background: white;
+	text-align: center;
+}
+
+.app .a_text ul li{
+	list-style: none;
+	margin: 0px 0px 30px 20px;
+	border: 1px solid red;
+	width: 240px;
+	padding: 10px;
+}
+/*鼠标移入效果*/
+.app .a_text ul li:hover{
+	border: 1px solid red;
+}
+
+.app .a_text .a_price{
+	font-size: 22px;
+	color: red;
+	font-weight: bold;
+}
+/*按钮*/
+.app .a_text .a_pay{
+	background: red;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;S
+	font-family: "微软雅黑";
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 0 5px 22px;
+	
+}
+.app .a_text .a_description{
+	font: "微软雅黑";
+}
+
+.app .a_music{
+	position: absolute;
+	top: 100px;
+	left: 270px;
+}
+
+.suc{
+	background: red;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;S
+	font-family: "微软雅黑";
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 0 5px 22px;
+}
+
+/*******音乐旋转开始******/
+/*旋转方法*/
+@-webkit-keyframes rotateM{
+	from{
+		-webkit-transform: rotate(0deg);
+	}to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+.rotateM{
+	-webkit-animation: rotateM 2s infinite linear;
+}
+/******音乐旋转结束******/
